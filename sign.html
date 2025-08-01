@@ -1,27 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sign_in</title>
-    <link rel="stylesheet" href="new.css">
+  <meta charset="UTF-8">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="new.css">
 </head>
 <body>
-    <form action="#">
-<p>First Name:<input type="text" placeholder=" first Name">
-last name <input type="text" placeholder="last  Name"></p>
-<p>Date of Birth:<input type="date"></p>
-<label>Gender</label>
-<p>
-Male:<input type="radio" id="Gender" required >
-Female:<input type="radio" id="Gender" required >
-</p><p>E-mail:<input type="email">
-    <p>password:<input type="password" required>
-    </p>
-</p>
 
-    <button type="submit">Sign Up</button>
+  <nav class="navbar">
+    <h1>
+      <a href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <button><a href="sign_in.html">Sign In</a></button>
+      <button><a href="sign.html">Sign Up</a></button>
+    </h1>
+  </nav>
 
-    </form>
+
+<h1>Sign Up</h1>
+
+<form>
+  <p>First Name: <input type="text" required></p>
+  <p>Last Name: <input type="text" required></p>
+  <p>Date of Birth: <input type="date" required></p>
+  <p>Gender:
+    <input type="radio" name="gender" required> Male
+    <input type="radio" name="gender" required> Female
+  </p>
+  <p>Email: <input type="email" required></p>
+  <p>Password: <input type="password" required></p>
+  <p><button type="submit">Sign Up</button></p>
+</form>
+
 </body>
 </html>

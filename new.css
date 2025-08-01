@@ -1,144 +1,147 @@
-/* Basic Body Styling */
-body {
-    background-color: #f3f3f3;
-    color: #1f3a1f;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-left: 8px;
+/* 🎨 Root Variables for Theme */
+:root {
+    --primary-color: #004d99;
+    --secondary-color: #77dc8b;
+    --accent-color: #ffd700;
+    --hover-color: #003366;
+    --navbar-alt-color: #1616ce;
+    --text-color: #1f3a1f;
+    --background-color: #f0f8ff;
+  }
+  
+  /* 🌿 Global Styles */
+  body {
+    background-color: var(--background-color);
+    font-family: Arial, sans-serif;
+    margin: 0;
     padding: 0;
-}
-
-/*Headings */
-h1 {
-    color: rgb(122, 16, 222);
+    color: var(--text-color);
+  }
+  
+  h1, h2, h3 {
     text-align: center;
-    margin-top: 20px;
-}
-
-h2 {
-    color: #006699;
-    margin-top: 30px;
-    font-size: 24px;
-}
-
-h3 {
-    color: rgb(14, 125, 243);
-    text-align: left;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-h4 {
-    color: fuchsia;
-    text-align: left;
-    margin-top: 20px;
-}
-
-h5 {
-    color: lightslategrey;
-    text-align: center;
-}
-
-h6 {
-    color: rgb(219, 7, 7);
-    text-align: center;
-}
-
-
-
-/*Navigation Bar */
-.navbar {
-    background-color: rgb(22, 22, 206);
+    margin: 20px 0;
+  }
+  
+  img {
+    display: block;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #999;
+  }
+  
+  /* 🌐 Navigation Bar */
+  .navbar {
+    background-color: var(--navbar-alt-color);
     padding: 15px 20px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
-
-.navbar a {
-    color: rgb(255, 255, 255);
+    flex-wrap: wrap;
+  }
+  .navbar h1 {
+    text-align: center;
+  }
+  
+  .navbar a {
+    color: white;
     text-decoration: none;
-    font-size: 18px;
     font-weight: bold;
-}
-
-.navbar a:hover {
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  .navbar a:hover {
     color: limegreen;
     text-decoration: underline;
-}
-/* button styling*/
-button {
-    background-color: rgb(119, 220, 139);
-    border: none;
-    padding: 10px 15px;
-    margin: 5px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    cursor: pointer;
-    color: white;
+  }
+  
+  /* 🖋 Form Styling */
+  form {
+    background: white;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 30px auto;
+  }
+  
+  form p {
+    margin: 10px 0;
+  }
+  
+  input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: rgb(78, 180, 99);
-}
-
-/* List styling */
-ul {
-    list-style-type: square;
-    padding-left: 30px;
-    margin-top: 10px;
-}
-
-li {
-    margin-bottom: 10px;
+    border: 1px solid #aaa;
     font-size: 16px;
-}
-
-
-/* Links */
-a {
-    color: rgb(255, 255, 0);
-    font-size: 18px;
-    transition: 0.3s;
-}
-
-a:hover {
-    color: rgb(25, 139, 19);
-    text-decoration: dashed;
-}
-
-
-
-/* Header */
-header {
-    text-align: center;
-    color: maroon;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 200%;
-    margin-bottom: 30px;
-}
-
-/*Form Input Styling */
-input[type="text"],
-input[type="email"],
-input[type="password"],
-input[type="date"] {
-    padding: 8px;
-    margin: 5px 0;
-    width: 250px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-/* Form Button  styling*/
-form button {
-    background-color: #1c87c9;
+  }
+  
+  input:focus, textarea:focus, select:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 5px var(--primary-color);
+  }
+  
+  /* 🔘 Buttons */
+  button,
+  input[type="submit"],
+  input[type="reset"] {
+    background-color: var(--primary-color);
     color: white;
     padding: 10px 20px;
-    font-size: 15px;
-
-}
-
-form button:hover {
-    background-color: #155d8b;
-}
+    border: none;
+    margin: 10px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  button:hover,
+  input[type="submit"]:hover,
+  input[type="reset"]:hover {
+    background-color: var(--hover-color);
+  }
+  
+  button:focus {
+    outline: 2px solid #006699;
+  }
+  
+  /* 📥 Footer */
+  footer {
+    text-align: center;
+    background: var(--primary-color);
+    color: white;
+    padding: 15px;
+    margin-top: 30px;
+  }
+  
+  footer a {
+    color: var(--accent-color);
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  /* 📱 Responsive Enhancements */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    form {
+      padding: 15px;
+    }
+  
+    img {
+      width: 100%;
+    }
+  }
+  

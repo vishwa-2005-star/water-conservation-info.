@@ -1,48 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>feedback</title>
+  <meta charset="UTF-8">
+  <title>Feedback</title>
+  <link rel="stylesheet" href="new.css">
 </head>
 
+
 <body>
-    <a href="home.html">HOME</a>
-    <form action="">
-      <p>  Name: <input type="text"  name="name" required></p>
-      <p> AGE: <input type="number" name="age" id="age " required>
-      </p>
-    <fieldset>
-      <p>
-        <legend >Gender</legend>
-        Male <input type="radio" name="gender" id="gender" required>
-        Female <input type="radio" name="gender" id="gender" required>
-    
-    </p>
-    </fieldset>
-    <p>
-        Course<select name="course" id="course" required>
-            <option value=""> --select course</option>
-            <option value="C">C</option>
-            <option value="">JAVA</option>
-            <option value="C++">C++</option>    
-            <option value="sql">SQL</option>
-            <option value="html"></option>
-        </select>
-    </p>
-    <p> 
-        Start Date: <input type="date" name="date" id="date" required>
-    </p>
-    <p>
-        feedback: <textarea name ="address" cols="100" rows="10"></textarea>
-    </p>
-    <p> choose file: <input type="file" ></p>
 
-      <p>  Email: <input type="email" name="email" id="email" required></p>
-      <p>any sugestion <input type="text"></p>
+  <nav class="navbar">
+    <h1>
+      <a href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <button><a href="sign_in.html">Sign In</a></button>
+      <button><a href="sign.html">Sign Up</a></button>
+    </h1>
+  </nav>
 
-    <input type="submit"> <input type="reset">
-    </form>
+
+<h1>Water Conservation Feedback</h1>
+
+<form>
+  <p>Name: <input type="text" name="name" required></p>
+  <p>Age: <input type="number" name="age" required></p>
+
+  <p>Gender:
+    <input type="radio" name="gender" value="male" required> Male
+    <input type="radio" name="gender" value="female" required> Female
+  </p>
+
+  <p>Are you aware of water-saving practices?
+    <select name="awareness" required>
+      <option value="">--Select--</option>
+      <option value="yes">Yes</option>
+      <option value="no">No</option>
+    </select>
+  </p>
+
+  <p>Feedback:
+    <textarea name="feedback" rows="5"></textarea>
+  </p>
+
+  <p>Email: <input type="email" name="email" required></p>
+  <p><input type="submit" value="Submit"> <input type="reset" value="Reset"></p>
+</form>
 
 </body>
 </html>
